@@ -1,4 +1,4 @@
-﻿local toggleKey = "E" -- бинд
+﻿local toggleKey = "E" -- bind
 local espEnabled = false
 
 local Players = game:GetService("Players")
@@ -13,7 +13,7 @@ local function getTeamColor(player)
     if player.Team then
         return player.TeamColor.Color 
     else
-        return Color3.new(1, 0, 0) -- класический цвет
+        return Color3.new(1, 0, 0) -- color
     end
 end
 
