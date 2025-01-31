@@ -81,4 +81,4 @@ local function toggleAimbot()
         end
     end
 end
-toggleAimbot()--toggle aim
+--toggleAimbot() toggle aim
