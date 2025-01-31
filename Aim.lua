@@ -2,7 +2,7 @@ local config = {
     TeamCheck = false,
     FOV = 150,
     Smoothing = 1,
-    AimPart = "Torso", -- За замовчуванням цільова частина
+    AimPart = "Torso", -- Aim Part
 }
 
 -- Services
