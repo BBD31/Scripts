@@ -4,7 +4,7 @@ local config = {
     Smoothing = 1,
     AimPart = "Torso", -- aim part
 }
-
+local toggleKey = "T" -- bind
 -- Services
 local RunService = game:GetService("RunService")
 local UserInputService = game:GetService("UserInputService")
@@ -81,4 +81,9 @@ local function toggleAimbot()
         end
     end
 end
---toggleAimbot() toggle aim
+game:GetService("UserInputService").InputBegan:Connect(function(input, isProcessed)
+    if isProcessed then return end
+    if input.KeyCode == Enum.KeyCode[toggleKey] then
+        toggleAimbot()
+    end
+end)
